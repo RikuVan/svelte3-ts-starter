@@ -1,8 +1,8 @@
 {
-  "name": "svelte-starter-template",
-  "version": "1.0.0",
-  "main": "main.js",
-  "author": "Holben888 <holben888@gmail.com>",
+  "name": "svelte-ts-starter",
+  "version": "0.1.0",
+  "main": "main.ts",
+  "author": "",
   "license": "MIT",
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^1.7.0",
@@ -15,6 +15,7 @@
     "eslint-plugin-svelte3": "^1.0.0",
     "less": "^3.9.0",
     "rollup": "^1.1.2",
+    "rollup-plugin-commonjs": "^9.3.4",
     "rollup-plugin-eslint": "^5.1.0",
     "rollup-plugin-livereload": "^1.0.0",
     "rollup-plugin-node-resolve": "^4.0.0",
@@ -22,7 +23,7 @@
     "rollup-plugin-svelte": "^5.0.1",
     "rollup-plugin-terser": "^4.0.4",
     "rollup-plugin-typescript": "^1.0.1",
-    "svelte": "3.0.0-beta.3",
+    "svelte": "^3.1.0",
     "svelte-preprocess-less": "^0.3.0",
     "tslib": "^1.9.3",
     "typescript": "^3.4.5"
@@ -30,8 +31,5 @@
   "scripts": {
     "start": "rollup -c rollup.config.js --watch",
     "lint": "eslint src/**/*.ts src/**/*.svelte"
-  },
-  "dependencies": {
-    "rollup-plugin-commonjs": "^9.3.4"
   }
 }

@@ -1,7 +1,9 @@
-<style>
+
+<style lang="less">
+  /* @import './less/main.less'; */
+
   p,
   button {
-      color: purple;
       font-family: 'Comic Sans MS';
       font-size: 2em;
   }
@@ -13,7 +15,7 @@
   let input = ''
 
   function handleClick() {
-      $countStore.count += 1
+    $countStore.count += 1
   }
 </script>
 
