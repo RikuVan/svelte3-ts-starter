@@ -2,6 +2,9 @@
   "root": true,
   "parser": "@typescript-eslint/parser",
   "plugins": ["svelte3", "@typescript-eslint"],
+  "settings": {
+    "svelte3/ignore-styles": true
+  },
   "extends": "standard",
   "parserOptions": {
     "extraFileExtensions": [".svelte"],
@@ -9,7 +12,8 @@
     "sourceType": "module",
     "ecmaFeatures": {
       "jsx": false
-    }
+    },
+    "ignore": ["less"]
   },
   "rules": {
     "semis": 0,
