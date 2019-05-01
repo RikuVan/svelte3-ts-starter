@@ -56,7 +56,7 @@ export default {
     replace({
       'process.env.NODE_ENV': dev ? JSON.stringify('development') : JSON.stringify('production')
     }),
-    typescript({ typescript: require('typescript') }),
+    typescript(),
     commonjs(),
     !dev && terser()
   ].filter(v => v)

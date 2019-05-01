@@ -18,6 +18,13 @@
   })
 </script>
 
+<style lang="less">
+ @import './less/vars.less';
+ .app {
+   background: @green;
+ }
+</style>
+
 <main class="app">
   {#if current.matches('question')}
     <QuestionScreen dog={dog} service={{...machine, current}} />

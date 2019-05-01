@@ -16,18 +16,14 @@
   }
 </script>
 
-<Screen service={service}>
-  <form on:submit={onSubmit}>
+<Screen service="{service}">
+  <form on:submit="{onSubmit}">
     <header>Care to tell us why?</header>
-    <textarea
-      placeholder="Complain here"
-      bind:value
-      on:keydown={onEscape}
-    ></textarea>
+    <textarea placeholder="Complain here" bind:value on:keydown="{onEscape}"></textarea>
     {#if service.current.matches({ form: 'loading' })}
-      <div>...loading</div>
+    <div>...loading</div>
     {:else}
-      <button>Submit</button>
+    <button>Submit</button>
     {/if}
   </form>
 </Screen>

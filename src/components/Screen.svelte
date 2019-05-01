@@ -4,7 +4,7 @@
     function onClose() {
       service.send('CLOSE')
     }
-  </script>
+</script>
 
 <section class="screen">
   <button title="close" type="button" on:click={onClose} />
