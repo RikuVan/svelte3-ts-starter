@@ -149,8 +149,7 @@ function createSurveyMachine() {
       }
     })
     .start()
-
-  service.subscribe = (run, invalidate = () => {}) => {
+  ;(service as any).subscribe = (run, invalidate = () => {}) => {
     const unsubscribe = subscribe(run, invalidate)
 
     return () => {

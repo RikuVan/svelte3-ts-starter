@@ -10,16 +10,16 @@
     service.send('NO')
   }
 </script>
-
-<Screen service="{service}">
+  
+<Screen service={service}>
   {#if dog !== null}
-  <img src="{dog}" height="{200}" alt="dog" />
+    <img src={dog} height={200} alt="dog" />
   {/if}
   <header>Would you adopt this dog?</header>
-  <button on:click="{onClickYes}" data-variant="yes">
+  <button on:click={onClickYes} data-variant="yes">
     Yes
   </button>
-  <button on:click="{onClickNo}" data-variant="no">
+  <button on:click={onClickNo} data-variant="no">
     No
   </button>
 </Screen>

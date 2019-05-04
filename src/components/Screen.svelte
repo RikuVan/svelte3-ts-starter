@@ -1,9 +1,9 @@
 <script>
-    export let service
-    export let state
-    function onClose() {
-      service.send('CLOSE')
-    }
+  export let service
+  export let state
+  function onClose() {
+    service.send('CLOSE')
+  }
 </script>
 
 <section class="screen">

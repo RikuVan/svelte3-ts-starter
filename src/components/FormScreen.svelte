@@ -1,4 +1,4 @@
-<script>
+<script >
   import Screen from './Screen.svelte'
 
   let value = ''
